@@ -14,12 +14,12 @@ for (let i = 0; i < 2; i++){
     let a = prompt("Введите обяательную статью расходов ы этом месяце", ""),
         b = prompt("Во сколько это обойдётся?");
 
-    if ((typeof(a))=== "string" && (typeof(a)) != null && (typeof(b)) != null 
+    if ((typeof(a)) === "string" && (typeof(a)) != null && (typeof(b)) != null 
         && a != "" && b != "" && a.length < 50){
         console.log("done");
         appData.expenses[a] = b;
     } else {
-
+        i = i-1;
     }
 };
 
